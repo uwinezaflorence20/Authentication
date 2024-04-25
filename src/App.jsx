@@ -5,14 +5,15 @@ import Home from './components/Home'
 import Head from './components/Head'
 import Aboutme from './components/Aboutme';
 import Contactme from './components/Contactme';
-
+import Login from './Login'
+import Register from './Register'
 
 
 function App() {
   
 
   return (
-    <>
+    <div>
     <Router>
       <header className=''>
        
@@ -39,6 +40,8 @@ function App() {
             
             <div className='w-full flex rounded-lg border-2 border-blue-400 mr-3 '>
             <Routes>
+            <Route path="Login" element={<Login/>}/>
+            <Route path="Register" element={<Register/>}/>
           <Route exact path="/" element={<Home/>} />
           <Route path="/about" element={<Aboutme />} />
           <Route path='/contact' element={<Contactme/>}/>
@@ -50,10 +53,10 @@ function App() {
          
       
       </header>
-    </Router>
+    </Router> 
   
 
-    </>
+    </div>
   )
 }
 
