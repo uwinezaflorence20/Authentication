@@ -5,8 +5,8 @@ import Home from './components/Home'
 import Head from './components/Head'
 import Aboutme from './components/Aboutme';
 import Contactme from './components/Contactme';
-import Login from './Login'
-import Register from './Register'
+import Login from './components/Login'
+import Register from './components/Register'
 
 
 function App() {
