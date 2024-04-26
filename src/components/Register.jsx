@@ -1,6 +1,8 @@
-const Login = () => {
-    return (
-      <div>  <h1 className="text-3xl text-blue-600 mb-8">Log in Here</h1>
+import React from 'react'
+const Register = () => {
+  return (
+    <div className=" bg-green-300 ml-80 rounded-xl border border-red-400 h-[100vh] w-[100vh] flex justify-center items-center bg-cover text-white">
+      <div>  <h1 className="text-3xl text-blue-600 mb-8">Create your Account</h1>
         <div className="  bg-yellow-200 rounded-xl border border-red-400 h-[40vh]  w-[60vh] flex justify-center items-center bg-cover text-blue-500">
       
         <form action="">
@@ -17,15 +19,16 @@ const Login = () => {
           <div className="flex gap-20 justify-center items-center">
           
           </div>
-          <button className="rounded-2xl border border-blue-400 mx-32 bg-blue-300 m-4  w-44" type="password" id="password"><a href="/">Register</a>  </button>
-         <p className="text-center mb-8">Already Have an Account? <a href="/Login" className="text-black">sign in</a></p>
+          <button className="rounded-2xl border border-blue-400 mx-32 bg-blue-300 m-4  w-44" type="password" id="password"> Register </button>
+         <p className="text-center mb-8">Already Have an Account? <a href="/" className="text-black">sign in</a></p>
           <div>
    {/* <span> New Here?<link to="Register"> Create An Account</link></span>  */}
           </div>
         </form>
       </div>
       </div>
-    );
-  };
-  
-  export default Login;
+    </div>
+  )
+}
+
+export default Register

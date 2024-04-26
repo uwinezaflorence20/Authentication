@@ -1,6 +1,9 @@
+import React from 'react';
+import {Link} from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 const Login = () => {
   return (
-    <div>  <h1 className="text-3xl text-blue-600 mb-8">Log in Here</h1>
+    <div className=" bg-green-300 ml-80 rounded-xl border border-red-400 h-[100vh] w-[100vh] flex justify-center items-center bg-cover text-white"> 
       <div className=" bg-yellow-200 rounded-xl border border-red-400 h-[40vh]   w-[60vh] flex justify-center items-center bg-cover text-blue-500">
     
       <form action="">
@@ -19,10 +22,11 @@ const Login = () => {
           </div>
           <span className="text-center text-black flex justify-center items-center"> Forgot Password</span>
         </div>
-        <button className="rounded-2xl border border-blue-400 bg-blue-300 ml-28 my-4   w-44" type="password" id="password"> sign in </button>
+        <Link to={"/"}>
+        <button className="rounded-2xl border border-blue-400 bg-blue-300 ml-28 my-4   w-44" ><Link to='/Home'>Log in  </Link> </button>
+        </Link>
        <p className="text-center">Already does not have an account ? <a  className="text-black" href="/Register">sign up</a></p>
         <div>
- {/* <span> New Here?<link to="Register"> Create An Account</link></span>  */}
         </div>
       </form>
     </div>
